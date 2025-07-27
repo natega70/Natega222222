@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نتيجة الطالب</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #222;
+      direction: rtl;
+      line-height: 1.6;
+    }
+    .container {
+      width: 95%;
+      max-width: 600px;
+      margin: auto;
+      padding: 10px 0;
+    }
+    .section-title {
+      background-color: #c8102e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .data-row {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .data-row div {
+      flex: 1;
+    }
+    .data-row .value {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .value.blue { color: #007bff; }
+    .value.red { color: red; }
+    .value.purple { color: #4B0082; }
+
+    .student-info {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+    }
+    .student-info b {
+      display: inline-block;
+      min-width: 110px;
+    }
+
+    .subject-section {
+      margin-top: 20px;
+    }
+    .subject-section .subject-row {
+      border-bottom: 1px solid #eee;
+      padding: 8px 10px;
+      font-size: 18px;
+    }
+    .subject-section .subject-row span {
+      color: #2c2c74;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section-title">بيانات الطالب</div>
+    <div class="data-row">
+      <div>
+        <div>رقم الجلوس</div>
+        <div class="value blue">1777030</div>
+      </div>
+      <div>
+        <div>مجموع الدرجات</div>
+        <div class="value red">146.50</div>
+      </div>
+      <div>
+        <div>النسبة المئوية</div>
+        <div class="value red">45.78 %</div>
+      </div>
+    </div>
+
+    <div class="student-info"><b>الاسم:</b> احمد عبدالعزيز محمد عبدالعزيز</div>
+    <div class="student-info"><b>حالة الطالب:</b> دور ثاني</div>
+    <div class="student-info"><b>نوعية التعليم:</b> طلاب</div>
+    <div class="student-info"><b>الشعبة:</b> علمي علوم</div>
+
+    <div class="subject-section">
+      <div class="section-title">الدرجات</div>
+      <div class="subject-row"><span>اللغة العربية :</span> 40</div>
+      <div class="subject-row"><span>اللغة الأجنبية الأولى :</span> 34</div>
+      <div class="subject-row"><span>مجموع الرياضيات البحتة :</span> غير مقرر</div>
+      <div class="subject-row"><span>التاريخ :</span> غير مقرر</div>
+      <div class="subject-row"><span>الجغرافيا :</span> غير مقرر</div>
+      <div class="subject-row"><span>الكيمياء :</span> 30</div>
+      <div class="subject-row"><span>الأحياء :</span> 30</div>
+      <div class="subject-row"><span>الفيزياء :</span> 12.5</div>
+      <div class="subject-row"><span>الإحصاء :</span> غير مقرر</div>
+      <div class="subject-row"><span>مجموع الدرجات :</span> 146.50</div>
+    </div>
+
+    <div class="subject-section">
+      <div class="section-title">مواد اخرى</div>
+      <div class="subject-row"><span>التربية الدينية :</span> 19</div>
+      <div class="subject-row"><span>التربية الوطنية :</span> 13</div>
+      <div class="subject-row"><span>اللغة الأجنبية الثانية :</span> 13</div>
+    </div>
+  </div>
+</body>
+</html>
